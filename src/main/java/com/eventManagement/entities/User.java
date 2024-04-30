@@ -7,10 +7,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 
 @Entity
+@Table(name="A")
 public class User {
 	
 	@Id
@@ -92,8 +94,7 @@ public class User {
 		this.address = address;
 	}
 	public User() {
-		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	@Override
 	public String toString() {
